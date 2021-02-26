@@ -1,0 +1,82 @@
+
+  .update {
+    flex:1px;
+    flex-direction: column;
+    display: flex;
+  }
+  .update_title {
+    flex-direction: column;
+    font-family: '양진체';
+    color:hsl(196, 70%, 41%);
+    font-size:17px;
+    font-weight:800;
+    margin:20px;
+    margin-bottom:0px;
+    border-bottom: 1px solid gray;
+  }
+  .update_content {
+    flex-direction: row;
+    display: flex;
+    flex:0 0 auto;
+    font-size:14px;
+  }
+  .update_left {
+    flex-direction: column;
+    margin-left:20px;
+  }
+  
+  .button {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin:auto;
+    cursor: pointer;
+    font-family: 'NeoDunggeunmo';
+  }
+  .button1{
+    background-color:yellowgreen;
+  }
+  .button2{
+    background-color:tomato;
+  }
+  .button_name{
+    line-height: 2;
+    margin-left:5px;
+  }
+  .update_right {
+    flex:1px;
+    margin-left: 40px;
+    margin-right:20px;
+    font-size:12px;
+    line-height: 1.7;
+  }
+
+  /*미니룸*/
+
+  .room_title {
+    flex-direction: column;
+    font-family: '양진체';
+    color:hsl(196, 70%, 41%);
+    font-size:17px;
+    font-weight:800;
+    margin:20px;
+    border-bottom: 1px solid gray;
+  }  
+
+  .room_content{
+    flex-direction:column;
+    flex:1;
+    margin:20px;
+    margin-top: 0px;
+    margin-left:50px;
+
+  }
+
+  .welcome_gif{
+    width:100%;
+    height:auto;
+  }

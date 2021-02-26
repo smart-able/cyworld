@@ -1,0 +1,103 @@
+
+/*달력*/
+.date_box {
+    flex:0.1;
+    border:2px solid #b4b4b47e ; 
+    margin:20px;
+    font-size: 17px;
+    display:flex;
+}
+/*오늘 날짜*/
+.date_today {
+    flex-direction : column;
+    flex:0.2;
+    font-weight: bold;
+    color:cadetblue;
+    margin:10px;
+    text-align: center;
+    
+}
+/*전체 날짜*/
+.date_all {
+    flex-direction : column;
+    flex:0 0 auto;
+    flex:1;
+    margin:10px;
+    margin-left:0px;
+    color:gray;
+}
+
+/*쉬는 날*/
+.sat {
+    color:cornflowerblue;
+}
+.sun {
+    color:tomato;
+}
+
+/*스크롤*/
+.diary_box {
+    flex:1px;
+    overflow:hidden auto;   
+    margin:20px; 
+}
+
+/*일기 내용*/
+.diary_content {
+    border:2px solid #b4b4b47e ; 
+    display: flex;
+    flex-direction: column;
+    margin:0px 0px 20px 0px;
+    font-size: 17px;
+}
+
+.diary_content_date {
+    font-size:15px;
+    flex:1;
+    flex-direction: column;
+    margin:20px;
+    color:cadetblue;
+}
+
+.diary_content_txt {
+    flex:1;
+    flex-direction: column;
+    margin:10px;
+    margin-top:0px;
+    margin-bottom:20px;
+    text-align: center;
+    line-height: 2.0;
+}
+
+/*비밀일기 버튼*/
+.secret_button {
+    display:flex;
+    flex:0.1;
+    flex-direction:column;
+    justify-content: center;
+    
+
+}
+#button {
+    background-color: rgb(253, 253, 253);
+    color:white;
+    border:none;
+    text-align: center;
+     width:auto;
+    height:auto;
+    padding:20px;
+    margin:40px;
+    font-family: 'NeoDunggeunmo';
+    font-size: 20px;
+    transition: 800ms ease all;
+}
+#button:hover {
+    background-color: rgb(78, 114, 182);
+    color:white;
+    padding:20px;
+    margin:40px;
+}
+
+#secret_box {
+    display: none;
+  }

@@ -1,0 +1,67 @@
+/*스크롤*/
+.guest_box{
+    margin:10px;
+    display:flex;
+    flex-direction: column;
+}
+.guest_scroll {
+    overflow:hidden auto; 
+    position:absolute;
+    width: 480px;
+    height:500px;
+}
+/*각 방명록 틀*/
+.guest_per {
+    display:flex;
+    flex-direction: column;
+    flex:auto;
+    margin-bottom:30px;
+    font-family: 'NeoDunggeunmo';
+}
+/*닉네임*/
+.guest_title {
+    flex-direction: column;
+    background-color: #eeeeee;
+    margin:10px;
+    padding:10px 15px;
+    height:auto;
+  }
+  .profile_blue {
+      color:cadetblue;
+  }
+  /*방명록 내용*/
+.guest_content {
+    
+    flex:1;
+    margin:0px 20px;
+    display:flex;
+}
+/*프로필 배경*/
+.guest_img {
+    flex:0.2;
+    margin-right:10px;
+    width:150px;
+    height:150px;
+    background-size: cover;
+}
+.pink {
+    background-image: url("./images/bg_pink.jpg");
+}
+.rib {
+    background-image:url("./images/bg_tulip.jpg");
+}
+.sun {
+    background-image: url("./images/bg_moon.jpg");
+}
+/*프로필 이미지*/
+#profile_img {
+    flex:0.2;
+    width:150px;
+    height:150px;
+}
+/*방명록 글*/
+.guest_txt {
+    flex:1;
+    margin:20px 0px 20px 20px ;
+    line-height: 1.7;
+}

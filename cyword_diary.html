@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2021 MINI HOMEPAGE</title>
+    <link rel="stylesheet" href="./static/font.css" />
+    <link rel="stylesheet" href="./static/layout.css"/>
+    <link rel="stylesheet" href="./static/cy_diary.css" />
+    <script src="https://kit.fontawesome.com/45148a5a82.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="box">
+            <div class="top_menu">
+               <div class="come">
+                <span id="today">TODAY 
+                  <span id="today_num">28</span>
+                </span>
+                <span id="total">TOTAL 123142</span>
+               </div>
+              <div class="hp_name">
+                <span>⎝⍢⎠○l얏호의 추억バ6ㅈΓ</span>
+              </div>
+              <div class="hp_url">http://</div>
+            </div>
+            <div class="bottom_box">
+              <div class="left_profile">
+                <div class="profile_img"></div>
+                <div class="profile_txt">
+                   ○l제 ュ만 울ㅈΓ, <br>
+                    ズl우ㅈΓ, <br>
+                    잊ㅈΓ, <br>
+                    끝ŁйㅈΓ, <br>
+                    ㅁı련, ㅇr픔, ブl억,<br>
+                    バr己б ,설레임도 <br>
+                    ( ˃̣̣̥ω˂̣̣̥ )<br>
+                </div>
+                <div class="profile_name">
+                  <span>○l얏호-영원ㅎŁ20</span>
+                </div>
+                <div class="dropdown">
+                  <div class="dropbtn">
+                    <div class="drop_title">파도타기</div>
+                    <div class="triangle-down"></div>
+                  </div>
+                  <div class="dropdown_content">
+                   <a href="https://www.w3schools.com/css/default.asp" target="_blank">css도와주기</a>
+                   <a href="https://blog.naver.com/rlagodls0799" target="_blank">블로그로 가기</a>
+                   </div>
+                </div>
+              </div>
+              <div class="right_content">
+                <div class="date_box">
+                  <div class="date_today">02.23 <br> TUE<br></div>
+                  <div class="date_all">1 2 3 4 5 <span class="sat">6 </span><span class="sun">7 
+                    </span>8 9 10 11 12 <span class="sun">13 14 15 
+                    </span>16 17 18 19 <span class="sat">20 </span><span class="sun">21 </span> 22 23 24 25 26 
+                    <span class="sat">27 </span><span class="sun">28 </span> </div>
+
+                </div>
+                <div class="diary_box">
+                  <div class="diary_content">
+                    <div class="diary_content_date">2010.02.20 토요일 13:10 </div>
+                    <div class="diary_content_txt">머리카락이 한움큼 빠졌다. <br>이건 스트레스 때문일까, <br>노력의 흔적일까, <br>아니면 질병일까,,?<br></div>
+                  </div>
+                  <div class="diary_content">
+                    <div class="diary_content_date">2010.02.18 목요일 11:10 </div>
+                    <div class="diary_content_txt">무엇이든 최선을 다 하고<br> 어려움이 닥쳐도 이겨내며<br> 쓰러지지 않는다<br>이얏호, 화이팅이다!<br></div>
+                  </div>
+                  <div class="diary_content">
+                    <div class="diary_content_date">2010.02.11 목요일 19:03 </div>
+                    <div class="diary_content_txt">인 생 이 란<br>.<br>.<br>.<br> 왔ㄷr ㄱr는 것..<br></div>
+                  </div>
+            
+                      <div class="secret_button">
+                        <button id="button" onclick="getTextFile()">
+                          <i class="fas fa-unlock-alt"></i>이얏호의 비밀일기 보기
+                        </button>
+                      </div>
+                      <div class="diary_content" id="secret_box">
+                        <div class="diary_content_date">이얏호의 비밀 일기</div>
+                        <div class="diary_content_txt" id="secret_diary"></div>
+                      </div>
+                    
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="menu">
+            <a href="./cyworld.html" class="menu_home">
+              <div class="rightbtn">홈</div></a>
+            <a href="./cyword_diary.html" class="menu_diary">
+              <div class="rightbtn">다이어리</div></a>
+            <a href="./cyworld_photo.html" class="menu_photo">
+              <div class="rightbtn">사진첩</div></a>
+            <a href="./cyworld_guest.html" class="menu_welcome">
+              <div class="rightbtn">방명록</div></a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+     function getTextFile() {
+     var input = document.createElement("input");
+     input.type = "file";
+     input.accept = "text/plain";
+     input.onchange = function (event) {
+       processFile(event.target.files[0]);
+      };
+     input.click();
+   }
+
+     function processFile(file) {
+       var reader = new FileReader();
+       reader.readAsText(file, "utf-8");
+
+       reader.onload = function () {
+         document.getElementById("secret_diary").innerText = reader.result;
+         document.getElementById("secret_box").style.display = "block";
+      };
+   }
+    
+    </script>
+  </body>
+</html>

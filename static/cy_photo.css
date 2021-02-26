@@ -1,0 +1,44 @@
+
+/*사진첩 내용*/
+
+.photo_container {
+  font-family: 'NeoDunggeunmo';
+  position: absolute;
+  height: 500px;
+  width: 500px;
+  margin:5px;
+  overflow:hidden auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.photo_title {
+  flex-direction: row;
+  background-color: #eeeeee;
+  margin:10px;
+  padding:10px 15px;
+  width:450px;
+  height:auto;
+}
+
+.photo_picture {
+  flex-direction: row;
+  flex:1;
+  width:450px;
+  height:450px;
+  text-align: center;
+  margin: 10px;
+  border: 3px dashed #818eff6e;
+}
+.bear_picture {
+  width:100%;
+}
+
+.photo_txt {
+  flex:1;
+  margin:20px;
+  font-size:20px;
+}
+
+
