@@ -39,13 +39,17 @@
   }
   .button1{
     background-color:yellowgreen;
+    text-decoration: none;
   }
+
   .button2{
     background-color:tomato;
+    text-decoration: none;
   }
   .button_name{
     line-height: 2;
     margin-left:5px;
+    text-decoration: none;
   }
   .update_right {
     flex:1px;
@@ -53,6 +57,7 @@
     margin-right:20px;
     font-size:12px;
     line-height: 1.7;
+    text-decoration: none;
   }
 
   /*미니룸*/
