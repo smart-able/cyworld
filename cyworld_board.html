@@ -5,8 +5,8 @@
     <title>2021 MINI HOMEPAGE</title>
     <link rel="stylesheet" href="./static/font.css" />
     <link rel="stylesheet" href="./static/layout.css"/>
-    <link rel="stylesheet" href="./static/cy_guest.css" />
-    <script src="https://kit.fontawesome.com/45148a5a82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/cy_board.css" />
+    
   </head>
   <body>
     <div class="bookcover">
@@ -46,48 +46,60 @@
                     <div class="triangle-down"></div>
                   </div>
                   <div class="dropdown_content">
-                    <a href="https://www.yahoo.com/" target="_blank">Yahoo!</a>
-                    <a href="https://blog.naver.com/rlagodls0799" target="_blank">Blog</a>
+                   <a href="https://www.yahoo.com/" target="_blank">Yahoo!</a>
+                   <a href="https://blog.naver.com/rlagodls0799" target="_blank">Blog</a>
                    </div>
                 </div>
+                
               </div>
               <div class="right_content">
-                  <div class="guest_box">
-                      <div class="guest_scroll">
-                      <div class="guest_per">
-                          <div class="guest_title">no.3 <span class="profile_blue" >곰레리나</span>  <i class="fas fa-home"></i> (2010.02.11 02:06)</div>
-                          <div class="guest_content">
-                              <div class="guest_img pink">
-                                  <img id="profile_img" src="./static/images/lala.png" alt="곰레리나"/></div>
-                              <div class="guest_txt">잘먹고 잘살아라</div>
-                          </div>
-
-                      </div>
-                      <div class="guest_per">
-                        <div class="guest_title">no.2 <span class="profile_blue" >리곰본</span>  <i class="fas fa-home"></i> (2010.01.01 08:06)</div>
-                        <div class="guest_content">
-                            <div class="guest_img rib">
-                                <img id="profile_img" src="./static/images/ribon.png" alt="리곰본"/></div>
-                            <div class="guest_txt">새복 많이 받으시라요 !</div>
+                <div class="board_box">
+                    <table class="board_list">
+                        <tr class="bd_list_title">
+                            <th >글제목</th>
+                            <th>날짜</th>
+                        </tr>
+                          <tr class="bd_list">
+                            <td ><a href="#title_pretty_bear">예쁜 이얏호의 하루</a></td>
+                            <td>2010.01.26</td>
+                          </tr>
+                          <tr class="bd_list">
+                            <td><a href="#title_cool_bear">멋진 이얏호의 하루</a></td>
+                            <td>2009.09.26</td>
+                          </tr>
+                    </table>
+                    <div class="board_scbox">
+                    <div class="board_scroll">
+                        <div class="board_content">
+                            <div class="board_title" id="title_pretty_bear">예쁜 이얏호의 하루 <span class="bd_title_date">(2010.01.26 22:29)</span></div>
+                            <div class="board_img" id="pretty_bear"></div>
+                            <div class="board_txt">
+                                오늘은 내 생일이다.<br>옆집사는 세자매가 놀러왔다.<br>
+                                쟤네들은 완전 똑같이 생겨서 크기로 구분해야한다.<br>
+                                신나는 생일파티를 했다.<br>
+                                1월 26일은 내 생일이다!<br>
+                            
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="guest_per">
-                        <div class="guest_title">no.1 <span class="profile_blue" >선곰라스</span>  <i class="fas fa-home"></i> (2009.09.26 12:26)</div>
-                        <div class="guest_content">
-                            <div class="guest_img sun">
-                                <img id="profile_img" src="./static/images/sunglass.png" alt="선곰라스"/></div>
-                            <div class="guest_txt">고맙다<br>람쥐( ´･･)ﾉ(._.`)<br></div>
+                        <div class="board_content">
+                            <div class="board_title" id="title_cool_bear">멋진 이얏호의 하루 <span class="bd_title_date">(2009.09.26 00:01)</span></div>
+                            <div class="board_img" id="cool_bear"></div>
+                            <div class="board_txt">
+                                오늘은 선곰라스의 생일이다.<br> 선곰라스는 항상 멋지게 하고 다닌다(^///^)<br>
+                                나중에 패션팁을 배워야겠다.<br>
+                                생일축하해, 선곰라스(❤ ω ❤)<br>
+                            
+                            </div>
                         </div>
                     </div>
-
                     </div>
-                  </div>
-                          
-              </div>
+                </div>
+                
+             
               </div>
             </div>
-            <div class="menu">
+          </div>
+          <div class="menu">
             <a href="./cyworld.html" class="menu_home">
               <div class="rightbtn">홈</div></a>
               <a href="./cyworld_board.html" class="menu_board">
@@ -99,10 +111,8 @@
             <a href="./cyworld_guest.html" class="menu_welcome">
               <div class="rightbtn">방명록</div></a>
           </div>
-          </div>
         </div>
       </div>
     </div>
-
   </body>
 </html>

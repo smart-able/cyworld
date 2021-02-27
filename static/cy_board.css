@@ -1,0 +1,84 @@
+/*게시판 컨테이너*/
+.board_box {
+    display:flex;
+    flex-direction: column;
+
+}
+/*글 목록*/
+table {
+    flex:0.2;
+    margin:20px;
+    margin-bottom: 0px;
+    border:2px solid rgba(170, 170, 170, 0.5);
+    text-align:left;
+    font-size:13px;
+    padding:10px;
+}
+th {
+    border-bottom: 3px solid #607fe6;
+    line-height: 1.7;
+}
+
+td {
+    border-bottom: 1px solid #607fe6;
+    line-height: 1.7;
+   
+}
+.bd_list a {
+    text-decoration: none;
+    color:black;
+}
+/*게시판 내용 박스*/
+.board_scbox{
+    flex:1;
+     margin:20px; 
+}
+.board_scroll {
+    overflow: hidden auto;
+    width: 480px;
+    height:380px;
+}
+
+.board_content {
+    display:flex;
+    flex-direction: column;
+    border:2px solid rgba(170, 170, 170, 0.5);
+    margin-bottom:20px;
+}
+.board_title {
+    flex:0.1;
+    color:#4b70b4;
+    padding:10px;
+    margin:20px;
+    border-bottom:2px solid cornflowerblue;
+}
+.bd_title_date {
+    font-size:13px;
+    
+}
+.board_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:400px;
+    height:400px;
+    margin:20px;
+    margin-top: 0px;
+}
+#pretty_bear {
+    background-image: url("./images/nextdoor.jpg");
+    
+}
+
+#cool_bear {
+    background-image: url("./images/cool.jpg");
+
+}
+.board_txt {
+    flex:1;
+    text-align: center;
+    line-height: 2;
+    margin: 20px;
+    margin-top:0px;
+    
+    
+}

@@ -86,6 +86,9 @@ body {
     flex:0.05;
     display:flex;
     font-family: 'KOTRA_BOLD-Bold';
+    margin:19px;
+    margin-left:10px;
+    margin-bottom:0px;
   }
   
   .room {
@@ -96,10 +99,9 @@ body {
 
   .come {
     flex-direction: column;
-    flex:0.9;
+    flex:0.6;
     text-align: center;
-    margin:22px;
-    margin-bottom:0px;
+    margin-left:2em;
     font-size:small;
   }
   #today_num{
@@ -109,19 +111,17 @@ body {
   
   .hp_name {
     flex-direction:column;
-    flex:1px;
-    margin:19px;
-    margin-bottom:0px;
+    flex:0.6;
     font-family: '양진체';
+    margin-left:3em;
   }
   
   .hp_url {
     flex-direction: column;
-    flex:1px;
-    margin:22px;
-    margin-bottom:0px;
+    flex:1;
     text-align: right;
-    font-size:small;
+    font-size:10px;
+  
   }
   
   .bottom_box {
